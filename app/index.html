@@ -87,6 +87,87 @@
         </div>
       </div>
     </div>
+    <!-- skills -->
+    <div class="section goldsecskill" id="section3">
+      <div class="row">
+        <div class="col s12 m8 l10 offset-l1">
+          <h2 class="goldh2">Language Skills</h2>
+          <div id="centerd3">
+          <!-- testing option 3 -->
+          <div class="row" id="testing">
+            <div class="col s10 m12 l12">
+          <!-- <div class="row"> -->
+          <ul>
+              <!-- <div class="col s11 m3 l4 offset-m1 offset-s1"> -->
+              <li>
+              <figure>
+                <svg id="fillgauge1" width="90%" height="175"></svg>
+                <!-- <h5>HTML</h5> -->
+                <figcaption>HTML</figcaption>
+              </figure>
+            </li>
+              <!-- </div> -->
+              <!-- <div class="col s11 m3 l4  offset-m1 offset-s1"> -->
+              <li>
+              <figure>
+          <svg id="fillgauge2" width="90%" height="175"></svg>
+          <!-- <h5>CSS</h5> -->
+          <figcaption>CSS</figcaption>
+        </figure>
+      </li>
+        <!-- </div> -->
+       <!--  <div class="col s11 m3 l4 offset-m1 offset-s1"> -->
+       <li>
+        <figure>
+          <svg id="fillgauge3" width="90%" height="175"></svg>
+          <!-- <h5>JavaScript<br>&amp; jQuery</h5> -->
+          <figcaption>JavaScript/jQuery</figcaption>
+        </figure>
+      </li>
+        <!-- </div> -->
+      <!-- </div> -->
+    </ul>
+
+    <!-- <ul>
+ -->      <!-- <div class="row">
+        <div class="col s11 m3 l3 offset-l1 offset-m1 offset-s1"> -->
+          <!-- <li> -->
+        <figure>
+          <svg id="fillgauge4" width="90%" height="175"></svg>
+          <!-- <h5>D3.js</h5> -->
+          <figcaption>D3.js</figcaption>
+        </figure>
+     <!--  </li> -->
+        <!-- </div> -->
+        <!-- <div class="col s11 m3 l3 offset-l1 offset-m1 offset-s1"> -->
+        <!-- <li> -->
+        <figure>
+          <svg id="fillgauge5" width="90%" height="175"></svg>
+          <!-- <h5>PHP</h5> -->
+          <figcaption>PHP</figcaption>
+        </figure>
+      <!-- </li> -->
+        <!-- </div>
+        <div class="col s11 m3 l3 offset-l1 offset-m1 offset-s1"> -->
+        <!-- <li> -->
+        <figure>
+          <svg id="fillgauge6" width="90%" height="175"></svg>
+          <!-- <h5>MySQL</h5> -->
+          <figcaption>MySQL</figcaption>
+        </figure>
+      <!-- </li> -->
+        <!-- </div>
+      </div> -->
+    <!-- </ul> -->
+
+      </div>
+       </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -165,9 +246,87 @@
           writing(text);
         }, firstTimer);
 
+        //animate.css effect on d3
+        // $('#centerd3').addClass('animated fadeInDown');
+        $('#centerd3').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+        offset: 600    
+         });  
         
 
+
+
       });
+
+       //javascript for the d3 ::
+      var config6 = liquidFillGaugeDefaultSettings();
+      //red
+      config6.circleColor = "#e53935";
+      config6.textColor = "#ce332f";
+      config6.waveTextColor = "#ce332f";
+      config6.waveColor = "#e57373";
+      config6.circleThickness = 0.2;
+      config6.textVertPosition = 0.2;
+      config6.waveAnimateTime = 1000;
+      var gauge1 = loadLiquidFillGauge("fillgauge1", 99, config6);
+      var config1 = liquidFillGaugeDefaultSettings();
+      //pink
+      config1.circleColor = "#E91E63";
+      config1.textColor = "#d11b59";
+      config1.waveTextColor = "#d11b59";
+      config1.waveColor = "#F06292";
+      config1.circleThickness = 0.2;
+      config1.textVertPosition = 0.2;
+      config1.waveAnimateTime = 1000;
+      var gauge2= loadLiquidFillGauge("fillgauge2", 99, config1);
+      var config2 = liquidFillGaugeDefaultSettings();
+      //purple
+      config2.circleColor = "#9C27B0";
+      config2.textColor = "#8c239e";
+      config2.waveTextColor = "#8c239e";
+      config2.waveColor = "#BA68C8";
+      config2.circleThickness = 0.2;
+      config2.textVertPosition = 0.2;
+      config2.waveAnimateTime = 1000;
+      var gauge3 = loadLiquidFillGauge("fillgauge3", 85, config2);
+      var config3 = liquidFillGaugeDefaultSettings();
+      //blue
+      config3.circleColor = "#03A9F4";
+      config3.textColor = "#0298db";
+      config3.waveTextColor = "#0298db";
+      config3.waveColor = "#4FC3F7";
+      config3.circleThickness = 0.2;
+      config3.textVertPosition = 0.2;
+      config3.waveAnimateTime = 1000;
+      var gauge4 = loadLiquidFillGauge("fillgauge4", 35, config3);
+      var config4 = liquidFillGaugeDefaultSettings();
+      //green
+      config4.circleColor = "#43A047";
+      config4.textColor = "#3c903f";
+      config4.waveTextColor = "#3c903f";
+      config4.waveColor = "#AED581";
+      config4.circleThickness = 0.2;
+      config4.textVertPosition = 0.2;
+      config4.waveAnimateTime = 1000;
+      var gauge5 = loadLiquidFillGauge("fillgauge5", 60, config4);
+      var config5 = liquidFillGaugeDefaultSettings();
+      //oragne
+      config5.circleColor = "#FB8C00";
+      config5.textColor = "#e17e00";
+      config5.waveTextColor = "#e17e00";
+      config5.waveColor = "#FFB74D";
+      config5.circleThickness = 0.2;
+      config5.textVertPosition = 0.2;
+      config5.waveAnimateTime = 1000;
+      var gauge6 = loadLiquidFillGauge("fillgauge6", 65, config5);
+
+      // function NewValue(){
+      //     if(Math.random() > .5){
+      //         return Math.round(Math.random()*100);
+      //     } else {
+      //         return (Math.random()*100).toFixed(1);
+      //     }
+      // }
       </script>
   </body>
 </html>
