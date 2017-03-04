@@ -56,7 +56,23 @@
         </div>
       </nav>
     </div> 
-    
+     <!-- content -->
+    <!-- home -->
+    <div class="section home" id="section1">
+      <div class="row">
+        <div class="col s12 m8 l8 offset-l2 offset-m2">
+          <h1>Maha Dafterdar</h1>
+          <hr>
+          <h2 id="homeh2">Web Designer &amp; Developer</h2>
+          <div class="container">
+            <div class="textContainer">
+              <div class="jstext"></div>
+            </div>         
+          </div> <!--CLOSE CONTAINER -->
+        </div>
+      </div>
+    </div>
+
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -99,6 +115,40 @@
         $('.button-collapse').sideNav({
           closeOnClick: true
         });
+
+        // when clicking on the logo 
+        $('a.brand-logo').bind('click',function(event){
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+          }, 2000,'easeInOutExpo');
+          event.preventDefault();
+        });
+
+        //for the right option of the navigation
+        $('ul.right a').bind('click',function(event){
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+          }, 2000,'easeInOutExpo');
+          event.preventDefault();
+        });
+
+        //when in responsive navigation
+        $('ul.side-nav a').bind('click',function(event){
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+          }, 2000,'easeInOutExpo');
+          event.preventDefault();
+        });
+
+        //typing effect
+        var firstTimer = 5000;
+        var text = $(".jstext");
+        setTimeout(function(){
+          writing(text);
+        }, firstTimer);
 
         
 
