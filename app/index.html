@@ -77,6 +77,8 @@
       <div class="row">
         <div class="col s12 m10 l8 offset-l2 offset-m1">
           <h2>About</h2>
+          <!-- <div class="row" id="abouticons">
+            <div class="col s4 m4 l7"> -->
           <p class="aboutskill">
             Hi, my name is Maha Dafterdar &amp; I'm a Web Designer &amp; Developer. Currently I'm a senior student at University of Central Florida (UCF) &amp; will be graduating this comming May 2017. 
           </p>
@@ -84,6 +86,48 @@
             My passion is crafting beautiful responsive websites that has a minimalist professional design. I'm devoted to have a clean code that is 100% valid with no warnings or errors. 
             <!-- You can grab my resume in <a href="#">English</a> or <a href="#">Arabic</a> version. -->
           </p>
+          <!-- </div> -->
+          <!-- <div class="col s4 m4 l3 offset-l1" id="leftline">
+            <p>
+                <i class="fa fa-code fa-3x" aria-hidden="true"></i>
+                <br>
+                Clean Code
+                <br>
+                <br>
+                <i class="fa fa-window-restore fa-3x" aria-hidden="true"></i>
+                <br>
+                Responsive Websites
+              <br>
+              <br>
+                <i class="fa fa-terminal fa-3x" aria-hidden="true"></i>
+                <br>
+                Valid Code with no errors
+              </p>
+          </div> -->
+          <div class="row" id="abouticons">
+            <div class="col s3 m4 l4 offset-s1">
+              <p>
+                <i class="fa fa-code fa-3x" aria-hidden="true"></i>
+                <br>
+                Clean Code
+              </p>
+
+            </div>
+            <div class="col s3 m4 l4">
+              <p>
+                <i class="fa fa-window-restore fa-3x" aria-hidden="true"></i>
+                <br>
+                Responsive Website
+              </p>
+            </div>
+            <div class="col s3 m4 l4 offest-s1">
+              <p>
+                <i class="fa fa-terminal fa-3x" aria-hidden="true"></i>
+                <br>
+                100% Valid Code
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -414,11 +458,11 @@
             </div>
             <div class="col s12 m6 l7 offset-l1 offset-m1">
               <p>
-                <i class="material-icons prefix">phone</i> +1(407)580-1192
+                <i class="fa fa-phone" aria-hidden="true"></i> +1(407)580-1192
                 <br>
-                <i class="material-icons prefix">email</i> maha_dafterdar@hotmail.com
+                <i class="fa fa-envelope" aria-hidden="true"></i> maha_dafterdar@hotmail.com
                 <br>
-                <img src="images/GitHub-Mark-32px.png" alt="github"> MahaMSD
+                <i class="fa fa-github" aria-hidden="true"></i> MahaMSD
               </p>
             </div>
           </div>
@@ -505,11 +549,17 @@
           writing(text);
         }, firstTimer);
 
+        //animate the icons is about section
+        $('#abouticons').addClass('hidden').viewportChecker({
+          classToAdd: 'visible animated fadeInLeft',
+          offset: 100
+        });
+
         //animate.css effect on d3
         // $('#centerd3').addClass('animated fadeInDown');
         $('#centerd3').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
-        offset: 600    
+          offset: 300    
          });  
         
         //gallery in the expanding cards

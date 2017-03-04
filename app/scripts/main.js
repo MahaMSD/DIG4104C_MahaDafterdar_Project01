@@ -709,7 +709,7 @@ var calculatePageScrollDistance = function (top, bottom) {
 	}
 	else {
 		// Find the maximum distance we can scroll without passing the top of the section.
-		scrollDistanceToTop = top - windowScrollDistance;
+		scrollDistanceToTop = top - windowScrollDistance - 200;
 		// Find the distance we need to scroll to reveal the entire section.
 		scrollDistanceToBottom = bottom - (windowScrollDistance + windowHeight);
 

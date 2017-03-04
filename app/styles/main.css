@@ -178,20 +178,25 @@ body{
     /*background-color: #ffffff;*/
 }
 
-/*nav ul li a .whitesec {
-  color: black;
-  border: 3px solid red;
+.whitesecabout div#abouticons {
+  text-align: center;
+  padding-top: 55px;
 }
-*/
-/*.goldsec h2 {
-  color: #edf2f4;
-}*/
+
+.whitesecabout div#abouticons p i {
+  color: #FF566F;
+  padding-bottom: 5px;
+  font-size: 70px;
+}
+
+.whitesecabout div#abouticons p {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #47474E;
+}
+
 
 /* media queries for fixing the hieght */
-/*@media all and (max-width: 1024px) {
-  
-}*/
-
 @media all and (max-width: 992px) {
   .section.whitesec {
     height:1300px;
@@ -209,9 +214,29 @@ body{
   }
 
   .section.whitesecabout {
-    height:550px;
+    height:800px;
     width:100%;
     z-index: -3;
+  }
+
+  .section.whitesecabout p {
+    font-size: 24px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .whitesecabout div#abouticons {
+    padding-top: 40px;
+  }
+
+  .whitesecabout div#abouticons p i {
+    padding-bottom: 7px;
+    font-size: 60px;
+  }
+
+  .whitesecabout div#abouticons p {
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .section.goldsecskill{
@@ -273,6 +298,20 @@ body{
     height:650px;
     width:100%;
     z-index: -3;
+  }
+
+  .whitesecabout div#abouticons {
+    padding-top: 30px;
+  }
+
+  .whitesecabout div#abouticons p i {
+    padding-bottom: 10px;
+    font-size: 50px;
+  }
+
+  .whitesecabout div#abouticons p {
+    font-size: 17px;
+    line-height: 22px;
   }
 
 }
