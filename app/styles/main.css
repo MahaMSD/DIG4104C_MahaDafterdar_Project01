@@ -283,7 +283,7 @@ body{
   }
 
   .section.goldsecskill {
-    height:1550px;
+    height:1600px;
     width:100%;
     z-index: -3;
   }
@@ -460,60 +460,88 @@ body{
   font-weight: bold; 
 }
 
-h5 {
-  font-size: 20px;
-  text-align: center;
-  color: #edf2f4;
-}
-
 div#centerd3 {
   margin: 0px;
   padding: 0px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 div#centerd3 ul {
   display: flex;
-    /*list-style-type: none;
-    margin: 0;
-    padding: 0; */
-    border: 1px solid blue;
-   
-
+  /*border: 1px solid blue;*/
+  width: 800px;
+  margin-left: -40px;
 }
 
 div#centerd3 ul li {
   justify-content: center;
-  /*display: inline;
-  float: left;*/
+  flex: 1;
 }
 
 div#centerd3 figure {
   text-align: center;
   display: inline-block;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   width: 90%;
+}
+
+div#centerd3 ul li figure figcaption {
+  margin-left: 0px;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #edf2f4;
 }
 
 
 
 /* media queries for fixing the hieght */
-@media all and (max-width: 768px) {
-
-}
-
-@media all and (max-width: 468px) {
-  /*h5 {
-    text-align: left;
-    padding-left: 30px;
-    margin-top: -10px;
-  }*/
+@media all and (max-width: 992px) {
   div#centerd3 div#testing {
-    margin-left: -50px;
+    margin-left: -70px;
   }
 
   div#centerd3 ul {
-    display: block;
+    display: table;
+    width: 700px;
+    margin-left: -20px;
+  }
+
+  div#centerd3 ul li {
+    display: table-cell;
+  }
+
+  div#centerd3 ul li figure {
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  div#centerd3 ul li figure figcaption {
+    margin-left: -50px;
+    margin-top: 20px;
+  }
+
+}
+
+@media all and (max-width: 768px) {
+  div#centerd3 ul {
+    width: 500px;
+    margin-left: -50px;
+  }
+
+  div#centerd3 figure {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 468px) {
+  div#centerd3 div#testing {
+    margin-left: -65px;
+  }
+
+  div#centerd3 ul {
+    display: list-item;
     list-style-type: none;
     margin: 0;
     padding: 0; 
@@ -521,15 +549,22 @@ div#centerd3 figure {
 
   div#centerd3 ul li {
    /* justify-content: center;*/
-    display: inline;
-    float: left;
+    display: block;
+    width: 100%;
+    clear: both;
+    /*float: left;*/
   }
 
   div#centerd3 figure {
     text-align: center;
-    display: inline-block;
-    border: 1px solid green;
-    width: 50%;
+    display: block;
+    width: 60%;
+    margin-top: 0px;
+  }
+
+  div#centerd3 ul li figure figcaption {
+    margin-left: -200px;
+    margin-top: 20px;
   }
 
 }
