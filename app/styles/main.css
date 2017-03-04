@@ -322,7 +322,7 @@ body{
   }
 
   .section.goldsecskill {
-    height:1450px;
+    height:1510px;
     width:100%;
     z-index: -3;
   }
@@ -473,77 +473,65 @@ div#centerd3 {
 }
 
 div#centerd3 ul {
-    text-align: center;
+  display: flex;
+    /*list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
+    padding: 0; */
+    border: 1px solid blue;
+   
 
 }
 
 div#centerd3 ul li {
-
-  display: inline-block;
-  float: left;
+  justify-content: center;
+  /*display: inline;
+  float: left;*/
 }
 
 div#centerd3 figure {
   text-align: center;
   display: inline-block;
- 
-
+  border: 1px solid green;
+  width: 90%;
 }
 
 
 
 /* media queries for fixing the hieght */
-/*@media all and (max-width: 768px) {
-  h5 {
-    text-align: center;
-    padding-left: 0px;
-    font-size: 18px;
-    
-  }
-}
-
-@media all and (max-width: 468px) {
-  h5 {
-    text-align: center;
-    padding-left: 0px;
-    
-  }
-}
-
-@media all and (max-width: 375px) {
-  svg {
-    width: 40%;
-    height: 150px;
-  }
-
-  h5 {
-    text-align: left;
-    padding-left: 95px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-
-  h5#nottomuch {
-    padding-left: 40px;
-  }
-
-  h5#lessmuch {
-    padding-left: 85px;
-  }
-}*/
 @media all and (max-width: 768px) {
 
 }
 
 @media all and (max-width: 468px) {
-  h5 {
+  /*h5 {
     text-align: left;
     padding-left: 30px;
     margin-top: -10px;
+  }*/
+  div#centerd3 div#testing {
+    margin-left: -50px;
   }
+
+  div#centerd3 ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+  }
+
+  div#centerd3 ul li {
+   /* justify-content: center;*/
+    display: inline;
+    float: left;
+  }
+
+  div#centerd3 figure {
+    text-align: center;
+    display: inline-block;
+    border: 1px solid green;
+    width: 50%;
+  }
+
 }
 
 /* ----------- end of style for the animated d3 chart ------------ */
